@@ -17,4 +17,8 @@ def generate_graph(n,m):
     for i in edges:
         s = str(i) + '\n'
         f.write(s)
-generate_graph(10,34)    
+    f.close()
+
+for i in range(10, 46, 5):
+    generate_graph(10, i)
+
