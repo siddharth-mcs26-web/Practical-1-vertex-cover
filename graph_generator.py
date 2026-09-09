@@ -13,7 +13,7 @@ def generate_graph(n,m):
             else:
                 edges.append((a,b))
     
-    f = open(f"graph{m}.txt", 'a')
+    f = open(f"graph{m}.txt", 'w')
     for i in edges:
         s = str(i) + '\n'
         f.write(s)
